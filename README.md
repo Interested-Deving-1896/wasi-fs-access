@@ -1,27 +1,75 @@
+[update-readmes]   Mode: rewrite — migrating to template structure...
 # wasi-fs-access
 
-## What
+[![Built with Ona](https://ona.com/build-with-ona.svg)](https://app.ona.com/#https://github.com/Interested-Deving-1896/wasi-fs-access)
 
-This is a demo shell powered by [WebAssembly](https://webassembly.org/), [WASI](https://wasi.dev/), [Asyncify](https://emscripten.org/docs/porting/asyncify.html) and [File System Access API](https://wicg.github.io/file-system-access/).
+<!-- AI:start:what-it-does -->
+_Description pending._
+<!-- AI:end:what-it-does -->
 
-You can access the live version here: https://wasi.rreverser.com/
+## Architecture
 
-Or watch a video showing some of the features: [![Youtube recording](https://user-images.githubusercontent.com/557590/95856904-b16b2300-0d52-11eb-9726-5ce4f2df7915.png)](https://youtu.be/qRmO-8b4WmE)
+<!-- AI:start:architecture -->
+_Architecture documentation pending._
+<!-- AI:end:architecture -->
 
-## How
+## Install
 
-It provides [WASI bindings implementation](https://github.com/GoogleChromeLabs/wasi-fs-access/blob/main/src/bindings.ts#LC511:~:text=getWasiImports()%20%7B) that proxies any filesystem requests to a real, host filesystem. This allows apps built in languages like C, C++, Rust and others to be compiled to WebAssembly and work as usual within a browser sandbox, accessing and manipulating files in a "real world".
+<!-- Add installation instructions here. This section is yours — the AI will not modify it. -->
 
-Since WASI APIs are synchronous by nature, but Web APIs are traditionally asynchronous to avoid blocking the main thread, Asyncify is used to bridge the two types of APIs together. Asyncify is a feature created as part of [Emscripten](https://emscripten.org/) and later extended to work with arbitrary WebAssembly files with the help of a [custom JavaScript wrapper](https://github.com/GoogleChromeLabs/asyncify).
+```bash
+git clone https://github.com/Interested-Deving-1896/wasi-fs-access.git
+cd wasi-fs-access
+```
 
-A [Rust port of coreutils with some patches](https://github.com/RReverser/coreutils) was chosen for the demo purposes, but it should be possible to extract and reuse same bindings for any applications compiled for the WebAssembly + WASI target.
+## Usage
 
-Note that some commands in the demo might not work due to either limitations of the WASI itself, limitations of the File System Access API (such as an [absent support for symlinks](https://github.com/WICG/file-system-access/issues/113)), or simply due to hardcoded assumptions about the target system in the used coreutils codebase itself. Most of those limitations can be easily worked around or will be naturally fixed as both APIs develop over time.
+<!-- Add usage examples here. This section is yours — the AI will not modify it. -->
 
-### Want to learn more?
+## Configuration
 
-Read up a blog post about Asyncify: https://web.dev/asyncify/
+<!-- Document configuration options here. This section is yours — the AI will not modify it. -->
 
-Or check out my presentation from the [WebAssembly Live!](https://webassembly.live/) here: https://www.slideshare.net/RReverser/asyncifying-webassembly-for-the-modern-web
+## CI
 
-And / or the talk: https://youtu.be/pzIJYAbcbf8?t=82
+<!-- AI:start:ci -->
+_CI documentation pending._
+<!-- AI:end:ci -->
+
+## Mirror chain
+
+<!-- AI:start:mirror-chain -->
+This repo is maintained in [`Interested-Deving-1896/wasi-fs-access`](https://github.com/Interested-Deving-1896/wasi-fs-access) and mirrored through:
+
+```
+Interested-Deving-1896/wasi-fs-access  ──►  OpenOS-Project-OSP/wasi-fs-access  ──►  OpenOS-Project-Ecosystem-OOC/wasi-fs-access
+```
+
+Changes flow downstream automatically via the hourly mirror chain in
+[`fork-sync-all`](https://github.com/Interested-Deving-1896/fork-sync-all).
+Direct commits to OSP or OOC are detected and opened as PRs back to `Interested-Deving-1896`.
+<!-- AI:end:mirror-chain -->
+
+## Contributors
+
+<!-- AI:start:contributors -->
+_Contributors pending._
+<!-- AI:end:contributors -->
+
+## Origins
+
+<!-- AI:start:origins -->
+_Original project — no upstream fork._
+<!-- AI:end:origins -->
+
+## Resources
+
+<!-- AI:start:resources -->
+_No additional resource files found._
+<!-- AI:end:resources -->
+
+## License
+
+<!-- AI:start:license -->
+[Apache-2.0](https://github.com/Interested-Deving-1896/wasi-fs-access/blob/main/LICENSE) © 2026 [Interested-Deving-1896](https://github.com/Interested-Deving-1896)
+<!-- AI:end:license -->
